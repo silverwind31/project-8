@@ -35,6 +35,10 @@ body{
         border-radius: 10px;
         background-color: transparent;
         color: #03FFA4;
-        text-align: center;        
+        text-align: center;      
+        
+        @media #{$bigTab}{
+            padding: 12px;
+        }
     }
 }

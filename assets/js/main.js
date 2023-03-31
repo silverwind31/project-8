@@ -30,5 +30,17 @@ $(document).ready(function(e){
             item.style.display = 'flex'; 
         }) 
     })
+
+    let countrySearch = $('.country_search');
+    if(countrySearch.length > 0){
+        countrySearch.hideseek();
+    }
+
+    $('.header_mobile .hamburger').on('click',function(e){
+        e.preventDefault();
+        $(this).find('.hamburger_menu').slideToggle(300);
+        $(this).toggleClass('show');
+        $(this).removeClass('show');
+    })
 })
       
